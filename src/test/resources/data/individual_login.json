@@ -1,0 +1,22 @@
+[
+    {
+        "username": "counter",
+        "password": "$2a$12$dRz3wilxtTk3TIQG9Sh1kukUehKTQIXYB.sTJDsQemMu0BTrlAS1C",
+        "user_type": "SYSTEM"
+    },
+    {
+        "username": "workshop",
+        "password": "$2a$12$4iSHx0cKsBKkf7O4ANkHxO8eZzzbMo3MzFZQ6Xb7Ecx3hSU4UCYgi",
+        "user_type": "SYSTEM"
+    },
+    {
+        "username": "education",
+        "password": "$2a$12$XGJ3sSx1p2Bx72zFKg89Kussmhskuwjtn8id4GGt6gi.1XWWodtX.",
+        "user_type": "SYSTEM"
+    },
+    {
+        "username": "admin",
+        "password": "$2a$12$A2xxk1uROgqOcFZBkqLOH.Xt4qC1rvD8Eup6EhklPfXPXwc04LlKK",
+        "user_type": "SYSTEM"
+    }
+]

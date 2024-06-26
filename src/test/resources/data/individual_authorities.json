@@ -1,0 +1,18 @@
+[
+    {
+        "username": "counter",
+        "authority": "ROLE_COUNTER"
+    },
+    {
+        "username": "workshop",
+        "authority": "ROLE_WORKSHOP"
+    },
+    {
+        "username": "education",
+        "authority": "ROLE_EDUCATION"
+    },
+    {
+        "username": "admin",
+        "authority": "ROLE_ADMIN"
+    }
+]
