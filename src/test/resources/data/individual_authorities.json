@@ -1,18 +1,10 @@
 [
     {
-        "username": "counter",
-        "authority": "ROLE_COUNTER"
+        "username": "collega",
+        "authority": "ROLE_COLLEAGUE"
     },
     {
-        "username": "workshop",
-        "authority": "ROLE_WORKSHOP"
-    },
-    {
-        "username": "education",
-        "authority": "ROLE_EDUCATION"
-    },
-    {
-        "username": "admin",
+        "username": "beheer",
         "authority": "ROLE_ADMIN"
     }
 ]

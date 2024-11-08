@@ -9,7 +9,6 @@ import org.jdbi.v3.core.Jdbi;
 @Getter
 public class AccessJdbi extends AbstractJdbi {
 
-    private final Jdbi jdbi;
     private static AccessJdbi instance;
 
     private AccessJdbi() {

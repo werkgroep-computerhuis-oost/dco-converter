@@ -47,11 +47,11 @@ public class TimesheetImporter {
 
     private boolean doesTimesheetExist(final Integer person_id, final Integer activity_id, final LocalDateTime registered) throws Exception {
         val sql = "SELECT TRUE AS exist FROM timesheets WHERE person_id=:person_id AND activity_id=:activity_id AND registered=:registered";
-        val found = mariadbJdbi.getJdbi().withHandle(handle -> handle.createQuery(sql)
+        val found = mariadbJdbi.getHandle().createQuery(sql)
             .bind("person_id", person_id)
             .bind("activity_id", activity_id)
             .bind("registered", registered)
-            .mapTo(Boolean.class).findOne());
+            .mapTo(Boolean.class).findOne();
         return found.orElse(false);
     }
 

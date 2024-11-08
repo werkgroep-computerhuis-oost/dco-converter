@@ -11,7 +11,6 @@ import java.sql.SQLException;
 @Getter
 public class MariadbJdbi extends AbstractJdbi {
 
-    private final Jdbi jdbi;
     private static MariadbJdbi instance;
 
     private MariadbJdbi() throws SQLException {

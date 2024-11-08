@@ -79,10 +79,10 @@ public class PostalCodeImporter {
         }
 
         val sql = "SELECT TRUE AS exist FROM postal_codes WHERE code=:code AND house_number_min>=:number AND house_number_max<=:number";
-        val found = mariadbJdbi.getJdbi().withHandle(handle -> handle.createQuery(sql)
+        val found = mariadbJdbi.getHandle().createQuery(sql)
             .bind("code", postal_code)
             .bind("number", house_number)
-            .mapTo(Boolean.class).findOne());
+            .mapTo(Boolean.class).findOne();
         return found.orElse(false);
     }
 }

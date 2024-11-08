@@ -26,6 +26,18 @@ class ImportDataRunner {
         mariadbJdbi = MariadbJdbi.getInstance();
     }
 
+    @BeforeEach
+    public void beforeEach() throws Exception {
+        accessJdbi.open();
+        mariadbJdbi.open();
+    }
+
+    @AfterEach
+    public void afterEach() throws Exception {
+        accessJdbi.close();
+        mariadbJdbi.close();
+    }
+
     @Test
     @Order(1)
     void import_postal_from_json() throws Exception {
